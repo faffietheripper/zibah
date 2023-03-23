@@ -1,5 +1,5 @@
 import React from "react";
-require("@tailwindcss/forms");
+/* require("@tailwindcss/forms"); */
 
 export default function () {
   return (
