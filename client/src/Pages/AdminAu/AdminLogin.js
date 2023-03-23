@@ -1,5 +1,5 @@
 import React from "react";
-require("@tailwindcss/forms");
+import "@tailwindcss/forms";
 
 export default function AdminLogin() {
   return (
