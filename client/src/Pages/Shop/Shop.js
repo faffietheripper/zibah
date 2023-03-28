@@ -1,6 +1,4 @@
 import React from "react";
-import { useEffect, useState } from "react";
-import axios from "axios";
 import ShopHero from "../../Components/ShopHero/ShopHero";
 import { useCart } from "react-use-cart";
 
