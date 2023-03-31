@@ -2,6 +2,7 @@ import React from "react";
 import { useCart } from "react-use-cart";
 
 export default function Cart() {
+  const { emptyCart } = useCart();
   const { isEmpty, totalUniqueItems, items, updateItemQuantity, removeItem } = useCart();
 
   if (isEmpty) return <p>Your cart is empty</p>;
@@ -32,9 +33,11 @@ export default function Cart() {
             </li>
           ))}
         </ul>
-        <button className="inline-block px-12 py-3 mt-8 text-sm font-medium text-white transition bg-teal-700 border border-teal-700 rounded hover:shadow focus:outline-none focus:ring">
-          {" "}
-          Contact Us to Purchase{" "}
+        <button
+          className="inline-block px-12 py-3 mt-8 text-sm font-medium text-white transition bg-teal-700 border border-teal-700 rounded hover:shadow focus:outline-none focus:ring"
+          onClick={emptyCart}
+        >
+          Confirm Order
         </button>
       </div>
     </>

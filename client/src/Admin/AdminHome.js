@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import LoginButton from "../Components/Login/Login";
 
 export default function AdminHome({ getProducts }) {
   const [products, setProducts] = useState([]);
@@ -61,7 +62,10 @@ export default function AdminHome({ getProducts }) {
       img: "",
     });
   }
-
+  const user = "kdfgskuc";
+  if (user !== "kdfgskuc") {
+    return <LoginButton />;
+  }
   return (
     <section className="text-center">
       <input onChange={handleName} value={name} placeholder="Search for Product" className="text-center border border-solid rounded" />
