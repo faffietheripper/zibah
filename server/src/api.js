@@ -62,4 +62,15 @@ app.put("products/:id", async (request, response) => {
   }
 });
 
-app.listen(PORT, () => console.log(`server is running on port ${PORT}`));
+/* app.listen(PORT, () => console.log(`server is running on port ${PORT}`));*/
+
+// new Netlify way to start the server
+const handler = serverless(app);
+
+// we use this so the handler can use async (that mongoose uses)
+module.exports.handler = async (event, context) => {
+  // you can do any code here
+  const result = await handler(event, context);
+  // and here
+  return result;
+};
