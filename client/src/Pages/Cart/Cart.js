@@ -1,11 +1,35 @@
 import React from "react";
 import { useCart } from "react-use-cart";
+import { Link } from "react-router-dom";
 
 export default function Cart() {
   const { emptyCart } = useCart();
   const { isEmpty, totalUniqueItems, items, updateItemQuantity, removeItem } = useCart();
 
-  if (isEmpty) return <p>Your cart is empty</p>;
+  if (isEmpty)
+    return (
+      <section class="overflow-hidden p-20 rounded-lg shadow-2xl md:grid md:grid-cols-3">
+        <img
+          alt="Cart is empty"
+          src="https://imagedelivery.net/9sCnq8t6WEGNay0RAQNdvQ/clch71v7d0596p6kapaq0m3nv/public"
+          class="h-32 w-full object-cover md:h-full"
+        />
+
+        <div class="p-4 text-center sm:p-6 md:col-span-2 lg:p-8">
+          <p class="text-sm font-semibold uppercase tracking-widest">Zibah Creations</p>
+
+          <h2 class="mt-6 font-black uppercase">
+            <span class="text-4xl font-black sm:text-5xl lg:text-6xl">Hey there</span>
+
+            <span class="mt-2 block text-sm">Your cart is still empty</span>
+          </h2>
+
+          <Link class="mt-8 inline-block w-[50%] bg-black py-4 text-sm font-bold uppercase tracking-widest text-white" to="/shop">
+            Shop Now
+          </Link>
+        </div>
+      </section>
+    );
 
   return (
     <>

@@ -11,22 +11,50 @@ export default function ContactUs() {
     emailjs.sendForm("service_hz4se9h", "template_knwa0el", form.current, "qNsMWr4j71vACFSXb").then(
       (result) => {
         console.log(result.text);
+        alert("Thank you for signing up, your email as been received and Ruth will be in touch with you soon ");
       },
       (error) => {
         console.log(error.text);
       }
     );
+    e.target.reset();
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
-    </form>
+    <div>
+      <section className="bg-gray-50">
+        <div className="p-8 md:p-12 lg:px-16 lg:py-24">
+          <div className="mx-auto max-w-lg text-center">
+            <h2 className="text-2xl font-bold text-gray-900 md:text-3xl"> Sign Up and dont miss our sales</h2>
+            <p className=" text-gray-500 sm:mt-4 sm:block">
+              {" "}
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae dolor officia blanditiis repellat in, vero, aperiam porro ipsum
+              laboriosam consequuntur exercitationem incidunt tempora nisi?
+            </p>
+          </div>
+
+          <div className="mx-auto mt-8 max-w-xl">
+            <form className="sm:flex sm:gap-4" ref={form} onSubmit={sendEmail}>
+              <div className="sm:flex-1">
+                <label className="sr-only">Email</label>
+
+                <input
+                  type="email"
+                  name="user_email"
+                  placeholder="Email address"
+                  className="w-full rounded-md border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none focus:ring focus:ring-yellow-400"
+                />
+              </div>
+
+              <input
+                type="submit"
+                value="Send"
+                className="group mt-4 flex w-full items-center justify-center gap-2 rounded-md bg-orange-600 px-5 py-3 text-white transition focus:outline-none focus:ring focus:ring-yellow-400 sm:mt-0 sm:w-auto"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }

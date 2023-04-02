@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import LoginButton from "../Components/Login/Login";
+import AdminLogin from "../Pages/AdminAu/AdminLogin";
 
 export default function AdminHome({ getProducts }) {
   const [products, setProducts] = useState([]);
@@ -63,8 +63,9 @@ export default function AdminHome({ getProducts }) {
     });
   }
   const user = "kdfgskuc";
+
   if (user !== "kdfgskuc") {
-    return <LoginButton />;
+    return <AdminLogin/>;
   }
   return (
     <section className="text-center">

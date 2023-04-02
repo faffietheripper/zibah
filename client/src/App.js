@@ -11,7 +11,6 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { CartProvider } from "react-use-cart";
 import Cart from "./Pages/Cart/Cart";
-import LoginButton from "./Components/Login/Login";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -33,7 +32,7 @@ function App() {
     <BrowserRouter>
       <CartProvider>
         <Header />
-        <LoginButton />
+        
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

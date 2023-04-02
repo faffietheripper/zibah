@@ -12,13 +12,13 @@ app.use(cors());
 app.use(bp.json());
 app.use(bp.urlencoded({ extended: true }));
 
-const PORT = process.env.PORT || 8080;
+//const PORT = process.env.PORT || 8080;
 
 //connection to database(pretty important)
 mongoose.connect(process.env.DATABASE_URL);
 
 //READ
-app.get("/products", async (request, response) => {
+app.get("https://zibahcreations.netlify.app/products", async (request, response) => {
   try {
     const products = await Product.find(request.query);
     //e.g. {product-type: bag}
@@ -30,7 +30,7 @@ app.get("/products", async (request, response) => {
 });
 
 //CREATE
-app.post("/products", async (request, response) => {
+app.post("https://zibahcreations.netlify.app/products", async (request, response) => {
   try {
     const newProduct = await Product.create(request.body);
     response.status(200).json(newProduct);
@@ -40,7 +40,7 @@ app.post("/products", async (request, response) => {
 });
 
 //DELETE e.g. localhost: 8080/products/9q050y2787293-(certain id)
-app.delete("/products/:id", async (request, response) => {
+app.delete("https://zibahcreations.netlify.app/products/:id", async (request, response) => {
   try {
     const id = request.params.id;
     const deletedProduct = await Product.findByIdAndDelete(id);
@@ -52,7 +52,7 @@ app.delete("/products/:id", async (request, response) => {
 });
 
 //UPDATE
-app.put("products/:id", async (request, response) => {
+app.put("https://zibahcreations.netlify.app/products/:id", async (request, response) => {
   try {
     const updatedProduct = await Product.findByIdAndUpdate(request.params.id, request.body);
     response.status(200).json(updatedProduct);
