@@ -18,7 +18,7 @@ export default function AdminHome({ getProducts }) {
   }, [name]);
 
   async function getProducts() {
-    let API = "http://localhost:8080/products";
+    let API = "https://zibahcreations.netlify.app/products";
 
     if (name !== "") {
       API = API + "?name=" + name;
@@ -38,7 +38,7 @@ export default function AdminHome({ getProducts }) {
   async function deleteProduct(id, name) {
     const confirmDelete = window.confirm(`Are you sure you want to permanently delete ${name}?`);
     if (confirmDelete) {
-      const API = `http://localhost:8080/products/${id}`;
+      const API = `https://zibahcreations.netlify.app/products/${id}`;
       const res = await axios.delete(API);
       console.log(res);
       getProducts();
@@ -47,7 +47,7 @@ export default function AdminHome({ getProducts }) {
 
   async function handleAddProduct(event) {
     event.preventDefault();
-    const API = "http://localhost:8080/products";
+    const API = "https://zibahcreations.netlify.app/products";
     const res = await axios.post(API, form);
 
     // add our new product to the page
@@ -65,7 +65,7 @@ export default function AdminHome({ getProducts }) {
   const user = "kdfgskuc";
 
   if (user !== "kdfgskuc") {
-    return <AdminLogin/>;
+    return <AdminLogin />;
   }
   return (
     <section className="text-center">

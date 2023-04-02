@@ -20,7 +20,7 @@ function App() {
   }, []);
 
   async function getProducts() {
-    let API = "http://localhost:8080/products";
+    let API = "https://zibahcreations.netlify.app/products";
 
     // if (name !== "") {
     //   API = API + "?name=" + name;

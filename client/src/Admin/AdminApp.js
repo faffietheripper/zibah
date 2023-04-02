@@ -23,7 +23,7 @@ export default function Admin() {
   async function deleteProduct(id, name) {
     const confirmDelete = window.confirm(`Are you sure you want to permanently delete ${name}?`);
     if (confirmDelete) {
-      const API = `http://localhost:8080/products/${id}`;
+      const API = `https://zibahcreations.netlify.app/products/${id}`;
       const res = await axios.delete(API);
       console.log(res);
       getProducts();
