@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Customisation() {
   return (
@@ -23,16 +24,15 @@ export default function Customisation() {
                 <h2 className="text-2xl font-bold sm:text-3xl"> Product Customisation Guidelines</h2>
 
                 <p className="mt-4 text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, molestiae! Quidem est esse numquam odio deleniti, beatae, magni
-                  dolores provident quaerat totam eos, aperiam architecto eius quis quibusdam fugiat dicta.
+                Because everything is made to order here, we can offer you a range of different colours and skin options that makes it possible for you to individualise your Zibah Creations products. Depending on the complexity of the style and material types and combinations you require, the price may vary from the standard prices shown on the website, our team who help you,  will make sure you are completely comfortable with the finished cost before processing your order. 
                 </p>
 
-                <a
+                <Link
                   href="#"
                   className="mt-8 inline-block rounded border border-teal-600 bg-teal-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-teal-600 focus:outline-none focus:ring active:text-teal-500"
                 >
                   Get in Touch
-                </a>
+                </Link>
               </div>
             </div>
           </div>
