@@ -20,7 +20,7 @@ function App() {
   }, []);
 
   async function getProducts() {
-    let API = "https://zibahcreations.netlify.app/products";
+    let API = "https://zibah-creations-server.netlify.app/.netlify/functions/api/products";
 
     // if (name !== "") {
     //   API = API + "?name=" + name;

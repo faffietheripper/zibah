@@ -9,7 +9,7 @@ export default function AboutFounder() {
           <div className="mx-auto max-w-xl text-center sm:text-left">
             <h2 className="text-2xl font-bold text-gray-900 md:text-3xl">Meet Our Founder - Ruth</h2>
 
-            <p className="hidden text-gray-500 md:mt-4 md:block">
+            <p className="text-gray-500 md:mt-4 md:block">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu
               enim et fermentum, augue. Aliquet amet volutpat quisque ut interdum tincidunt duis.
             </p>
