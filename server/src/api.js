@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const Product = require("./models/products");
 const cors = require("cors");
 const bp = require("body-parser");
+const serverless = require("serverless-http");
 
 require("dotenv").config();
 
