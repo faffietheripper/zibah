@@ -11,10 +11,6 @@ export default function FeaturedProducts() {
               <div className="max-w-md mx-auto text-center lg:text-left">
                 <header>
                   <h2 className="text-xl font-bold text-gray-900 sm:text-3xl">Featured Macrame Products.</h2>
-
-                  <p className="mt-4 text-gray-500">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas rerum quam amet provident nulla error!
-                  </p>
                 </header>
 
                 <Link
