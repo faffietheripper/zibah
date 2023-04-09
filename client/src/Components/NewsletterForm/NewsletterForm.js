@@ -28,8 +28,7 @@ export default function ContactUs() {
             <h2 className="text-2xl font-bold text-gray-900 md:text-3xl"> Sign Up and dont miss our sales</h2>
             <p className=" text-gray-500 sm:mt-4 sm:block">
               {" "}
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae dolor officia blanditiis repellat in, vero, aperiam porro ipsum
-              laboriosam consequuntur exercitationem incidunt tempora nisi?
+              Send me the Zibah Creations newsletter. I expressly agree to receive the newsletter and know that I can easily unsubscribe at any time.
             </p>
           </div>
 

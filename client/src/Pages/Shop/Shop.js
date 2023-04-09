@@ -17,7 +17,7 @@ export default function Shop({ products }) {
           }
 
           return (
-            <div className="product m-1  border-solid border-black rounded">
+            <div className="product m-1  border-solid border-gray-600 rounded">
               <section className="block group m-1 my-5">
                 <img src={product.img} className=" h-[150px] sm:h-[300px] rounded-md aspect-square sm:w-[300px] w-[150px]" />
                 <section class="flex place-content-between">
