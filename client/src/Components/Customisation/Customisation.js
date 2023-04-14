@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 
 export default function Customisation() {
   return (
-    <div>
-      <section>
+    <div id="custom">
+      <section class="mb-32"> 
         <div className="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:h-screen lg:grid-cols-2">
-            <div className="relative z-10 lg:py-16">
-              <div className="relative h-64 sm:h-80 lg:h-full">
+          <div className="grid grid-cols-1 lg:h-[60vh] lg:grid-cols-2">
+            <div className="relative lg:py-16">
+              <div className="relative h-[60vh] sm:h-[60vh] lg:h-[60vh]">
                 <img
                   alt="House"
                   src="https://macrame.ie/wp-content/uploads/2022/03/KCbyV-Crossbody-Boho-Macrame-Bag-lead-image.png"
@@ -28,10 +28,10 @@ export default function Customisation() {
                 </p>
 
                 <Link
-                  href="#"
+                  to="/shop"
                   className="mt-8 inline-block rounded border border-teal-600 bg-teal-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-teal-600 focus:outline-none focus:ring active:text-teal-500"
                 >
-                  Get in Touch
+                  Order a Custom
                 </Link>
               </div>
             </div>
