@@ -23,16 +23,19 @@ export default function Header() {
                     Home
                   </Link>
                 </li>
-
                 <li>
                   <Link className="text-gray-500 transition hover:text-gray-500/75" to="/shop">
                     Shop
                   </Link>
                 </li>
-
                 <li>
                   <Link className="text-gray-500 transition hover:text-gray-500/75" to="/about">
                     About
+                  </Link>
+                </li>{" "}
+                <li>
+                  <Link className="text-gray-500 transition hover:text-gray-500/75" to="/testing">
+                    Testing
                   </Link>
                 </li>
                 <li>
@@ -48,7 +51,6 @@ export default function Header() {
                 </li>
               </ul>
             </nav>
-
           </div>
         </div>
       </header>

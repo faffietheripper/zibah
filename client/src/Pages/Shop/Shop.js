@@ -1,6 +1,7 @@
 import React from "react";
 import ShopHero from "../../Components/ShopHero/ShopHero";
 import { useCart } from "react-use-cart";
+import Testimonials from "../../Components/Testimonials/Testimonials";
 
 export default function Shop({ products }) {
   const { addItem } = useCart();
@@ -8,7 +9,7 @@ export default function Shop({ products }) {
   return (
     <div>
       <ShopHero />
-      <section className="flex place-content-around m-6 flex-wrap my-8">
+      <section className="mt-8 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 ">
         {products.map((product) => {
           console.log(product);
           function handleClick() {
@@ -17,10 +18,10 @@ export default function Shop({ products }) {
           }
 
           return (
-            <div className="product m-1  border-solid border-gray-600 rounded">
+            <div className="grid product m-1 border border-solid border-gray-600 place-content-center">
               <section className="block group m-1 my-5">
-                <img src={product.img} className=" h-[150px] sm:h-[300px] rounded-md aspect-square sm:w-[300px] w-[150px]" />
-                <section class="flex place-content-between">
+                <img src={product.img} className="  h-[300px] aspect-square w-[300px] " />
+                <section class="flex place-content-between max-w-[300px] ">
                   <div>
                     <p className="font-medium text-gray-900">{product.name}</p>
                     <p class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">{product.description}</p>
@@ -49,6 +50,7 @@ export default function Shop({ products }) {
           );
         })}
       </section>
+      <Testimonials />
     </div>
   );
 }

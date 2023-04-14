@@ -11,6 +11,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { CartProvider } from "react-use-cart";
 import Cart from "./Pages/Cart/Cart";
+import Testing from "./Pages/Testing/Testing";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -40,6 +41,7 @@ function App() {
           <Route path="/admin1" element={<AdminLogin />} />
           <Route path="/adminhome" element={<AdminHome products={products} getProducts={getProducts} />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/testing" element={<Testing />} />
         </Routes>
         <Footer />
       </CartProvider>
