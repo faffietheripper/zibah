@@ -42,7 +42,7 @@ export default function CustomForm() {
       {showModal ? (
         <>
           <div>
-            <div className=" flex fixed md:ml-20 inset-0 z-50 outline-none focus:outline-none ml-4">
+            <div className=" flex fixed md:ml-20 overflow-y-auto inset-0 z-50 outline-none focus:outline-none ml-4">
               <div className="relative w-auto max-w-3xl">
                 {/*content*/}
                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-[90vw] bg-white outline-none focus:outline-none">
