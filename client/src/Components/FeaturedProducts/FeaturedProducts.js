@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import FeaturedPic from "../../Images/FeaturedProd.jpeg";
 
 export default function FeaturedProducts() {
   return (
@@ -7,7 +8,7 @@ export default function FeaturedProducts() {
       <section>
         <div className="max-w-screen-xl px-4 py-8 mx-auto sm:py-12 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:items-stretch">
-            <div className="grid p-6 bg-gray-100 rounded place-content-center sm:p-8 bg-[url('Images/featured.webp')] ">
+            <div className="grid p-6 bg-gray-100 rounded place-content-center sm:p-8 ">
               <div className="max-w-md mx-auto text-center lg:text-left">
                 <header>
                   <h2 className="text-xl font-bold text-gray-900 sm:text-3xl">Featured Macrame Products.</h2>
@@ -26,11 +27,7 @@ export default function FeaturedProducts() {
               <ul className="grid grid-cols-2 gap-4">
                 <li>
                   <a href="#" className="block group">
-                    <img
-                      src="https://lh3.googleusercontent.com/U9E4BS9MN7krvFd41rdzoH1Muw-dD06G_8LTZCSIOC1ELD7OXD-BCuc8u7XPF6u4Duhq_7UGN2TgRrt6a4PgpUu7M-5555-Rw6SdOVEXlvu-VnOLraqgLeAdAAPM7sZMIpKVKDedD_BWPM2C3uUTGCAkx6U6cIIAJ-71qOUUiPKp2ayXFvA0oEQic6VeoZEhtJBLZGtmi9fAqhs7akqiFnKwaxhHg4J7osvTm_098Sm7D7bLuw2wl5BvQlU0bftUhZl5_xkBGg6LQytv0sJeoJmENAWWbZIwp9LSI59YjDY8aniQwoYMcPaDyCtNAyoMXNz_2FFjZM1qQ8hXmeNqr_k0-DG42QGXG3RZtmOny1gi8l9hOiYQKqfu83yoI_FR2JtcVl-AHsIeoQIx8ksftIokxUWH7MvHrGFEPH1Y-zvCwpOboOa1EH0TtKiu5twz_RET3x4KLLuA79oC8Q48jyU7axwM3C_OIM0HpAoRG8DtuxSW5W-r7zTl4yhzpsyfGsP2BySQ0Z5FIB9n9SPtzuFiJr88sCgte_gSMIwDcOZuvCE-2t0U5R2vOJATdQfDPlzvATdEiGRAHNz8NpgnZmHvsJuR12qHjy2q-1VPIYmH6fF-cyt72WcPpijSH0sMHOKGxcFxnRirDbv3kbCXsF2IgjpOCcotie53WTJ-Y0pELE-p82FeZIwhs9Q-RiR5BcEiEo4gYINRi6F400wLHH96I6PR04OmsF31zgx1LTNUxDZ8vzcboiWdFTA7TBB3nLuAmM3dvig1BcHxUAfLn9oO3qGEHujh0n40K6pH3msrqTtaw8S9_CaD5BPKBFmXhkCASiJUyaw4UHjxTRmHJ6K3I9FOzCvj2iaOBUho_IxYAc4t_pYMf0_boZiCgOrNJmaOKr5Pcw6ksN283BFfEfIvwNp0m8UQnmMZ1vpXHUGZ=w1080-h1374-s-no?authuser=0"
-                      alt=""
-                      className="object-cover w-full rounded aspect-square"
-                    />
+                    <img src={FeaturedPic} alt="" className="object-cover w-full rounded aspect-square" />
 
                     <div className="mt-3">
                       <h3 className="font-medium text-gray-900 group-hover:underline group-hover:underline-offset-4">Macrame Cushion Covers</h3>

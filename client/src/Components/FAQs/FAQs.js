@@ -50,7 +50,7 @@ export default function FAQs() {
 
         <details className="group [&_summary::-webkit-details-marker]:hidden" open>
           <summary className="flex items-center justify-between p-4 rounded-lg cursor-pointer bg-gray-50">
-            <h2 className="font-medium text-gray-900">Lorem ipsum dolor sit amet consectetur adipisicing?</h2>
+            <h2 className="font-medium text-gray-900">How long does it take to deliver a product?</h2>
 
             <svg
               className="ml-1.5 h-5 w-5 flex-shrink-0 transition duration-300 group-open:-rotate-180"
@@ -64,8 +64,7 @@ export default function FAQs() {
           </summary>
 
           <p className="px-4 mt-4 leading-relaxed text-gray-700">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias culpa in, recusandae laboriosam neque aliquid libero
-            nesciunt voluptate dicta quo officiis explicabo consequuntur distinctio corporis earum similique!
+          It depends on the product and the country to which it is required. Local clients (in Zimbabwe) will get their products within 7 working days. Delivery for international client's varies from about 3 weeks to 4 from the date of order and payment.
           </p>
         </details>
       </div>

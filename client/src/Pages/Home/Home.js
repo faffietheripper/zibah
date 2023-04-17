@@ -4,6 +4,7 @@ import NewsletterForm from "../../Components/NewsletterForm/NewsletterForm";
 import FeaturedProducts from "../../Components/FeaturedProducts/FeaturedProducts";
 import Customisation from "../../Components/Customisation/Customisation";
 import FAQs from "../../Components/FAQs/FAQs";
+import AboutFounder from "../../Components/AboutFounder/AboutFounder";
 
 export default function Home() {
   return (
@@ -11,7 +12,8 @@ export default function Home() {
       <HomeHero />
       <FeaturedProducts />
       <Customisation />
-      <FAQs/>
+      <AboutFounder />
+      <FAQs />
       <NewsletterForm />
     </div>
   );
