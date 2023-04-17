@@ -20,9 +20,9 @@ export default function Shop({ products }) {
             }
 
             return (
-              <div className="grid product m-1 border border-solid border-gray-600 place-content-center">
+              <div className="grid product m-1 place-content-center">
                 <section className="block group m-1 my-5">
-                  <img src={product.img} className="  lg:h-[300px] h-[150px] aspect-square lg:w-[300px] w-[150px] " />
+                  <img src={product.img} className="object-contain rounded lg:h-[300px] h-[150px] aspect-square lg:w-[300px] w-[150px] " />
                   <section class="flex place-content-between max-w-[300px] ">
                     <div>
                       <p className="font-medium text-gray-900">{product.name}</p>
