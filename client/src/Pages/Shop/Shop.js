@@ -38,9 +38,6 @@ export default function Shop({ products }) {
 
 
       </ShowMore >
-      
-
-
       <CustomForm />
       <Testimonials />
     </div>

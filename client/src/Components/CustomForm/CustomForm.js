@@ -1,7 +1,6 @@
 import React from "react";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
-import ModalPic from "../../Images/logo.jpg";
 
 export default function CustomForm() {
   const [showModal, setShowModal] = React.useState(false);

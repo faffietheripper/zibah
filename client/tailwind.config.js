@@ -5,6 +5,9 @@ module.exports = {
   theme: {
     extend: {},
   },
+  backgroundImage: {
+    "home-bg": "url('../public/ZibahHero.jpeg')",
+  },
 
   plugins: [],
 };
