@@ -1,19 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Custom from "../../Images/CustomGuide.jpeg"
 
 
 export default function Customisation() {
   return (
     <div id="custom">
       <section class="mb-32"> 
-        <div className="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:h-[60vh] lg:grid-cols-2">
-            <div className=" lg:py-16">
-              <div className=" h-[60vh] sm:h-[60vh] lg:h-[60vh]">
+        <div className="lg:mx-28 mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:h-[60vh] lg:grid-cols-2 ">
+            <div className=" lg:py-16 w">
+              <div className=" h-[60vh] sm:h-[60vh] lg:w-[600px] lg:h-[60vh]">
                 <img
                   alt="Custom Guidelines"
-                  src="https://macrame.ie/wp-content/uploads/2022/03/KCbyV-Crossbody-Boho-Macrame-Bag-lead-image.png"
-                  className=" h-full w-full object-cover"
+                  src={Custom}
+                  className="h-full w-full object-cover"
                 />
               </div>
             </div>

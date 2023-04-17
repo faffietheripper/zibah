@@ -1,6 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import FeaturedPic from "../../Images/FeaturedProd.jpeg";
+import PotHang from "../../Images/Plant Pot Hanger.jpeg";
+import CushCover from "../../Images/CushionCover.jpeg";
+import Belt from "../../Images/MacrameBelt.jpeg";
+import WallHang from "../../Images/WallHangers.jpeg";
 
 export default function FeaturedProducts() {
   return (
@@ -8,10 +12,10 @@ export default function FeaturedProducts() {
       <section>
         <div className="max-w-screen-xl px-4 py-8 mx-auto sm:py-12 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:items-stretch">
-            <div className="grid p-6 bg-gray-100 rounded place-content-center sm:p-8 ">
+            <div className="grid p-6 rounded place-content-center sm:p-8 ">
               <div className="max-w-md mx-auto text-center lg:text-left">
                 <header>
-                  <h2 className="text-xl font-bold text-gray-900 sm:text-3xl">Featured Macrame Products.</h2>
+                  <h2 className="text-9xl font-bold text-gray-900 sm:text-3xl">Featured Macrame Products.</h2>
                 </header>
 
                 <Link
@@ -27,7 +31,7 @@ export default function FeaturedProducts() {
               <ul className="grid grid-cols-2 gap-4">
                 <li>
                   <a href="#" className="block group">
-                    <img src={FeaturedPic} alt="" className="object-cover w-full rounded aspect-square" />
+                    <img src={CushCover} alt="" className="object-cover w-full rounded aspect-square" />
 
                     <div className="mt-3">
                       <h3 className="font-medium text-gray-900 group-hover:underline group-hover:underline-offset-4">Macrame Cushion Covers</h3>
@@ -39,11 +43,7 @@ export default function FeaturedProducts() {
 
                 <li>
                   <a href="#" className="block group">
-                    <img
-                      src="https://lh3.googleusercontent.com/6LrT0-GH0a1gWPRfs5VD7bxL-0NzS_d8Hdd0aPv9HoucxavVNro_PejNX0rEu8BxwVTCs7kwoE0MQQcXwuyPz63SSc0MawQkowGbrrc6V1kafMlHCspnd-4RmPy2ByQTUhrrYd79tMuMuGOZkyneJupoqZA64LPs1AzyKQVykdPr3nI7EaFIFTC2J0IfvRLzXss031EFLt7E-PD3otCFlhsAN0e3edwfAhE3cIK-LveHIThBfskBYZHPOx2oGreXlOFb2xWjn8QbdSUYGhP2RJvGmuF1CQqgZa-e18yL0r6IHQiMaGqEzXoGectO477lTMbdON69URjvjFLqi82kUeKeS3qhWbPw_oRVXX95G2-q8J-OTvVte4jA0lhkCbR6vZ0KNBLzcRnT2CRsjL5y1WdGXh57aCwWDoKqDLk0SxcuZ7odHKLTbVyyoGz5jhe1j88aDBEZCDyRA2tI-5Ic6TMu3z1Cl635K0GcTnC7fksV1CoMrrQGVvWdu_ysrlmFQnfEr99grl0Fi7dfx65VYJCXGVYq6uhHaDhYO1RSm9o31i35VMP-9N2NiylYl5V5j_sorYRdneKpZl4E49dXfoDz4tuCT2zKWLZa9cdn9GiUSEb-jGGub7mNJqD0LdHNSwr76RgdLO9n3nZdfY6olgxhOysa3pYDCYdZ--hhDeYJlIXLnogM1icLYFUZPGz7jY8BIwPsVtUFte0V1LOKrVJe_m3swQ3BMEjFE46Z9j3V9VkU-K4wtqfjXrI792rZXYu5X8Qq3NLcM8o1ov_GZ9pXFDfdLz550H3Sm1DTevLRqjvrDBmKohlBOZZC0johAjvxImsQiDoN2lYwZfNXz52e5T8in1xXjfVBp3wRQrBKuSpzKl4BEoMl3MWYn84a41_IOxAOnkShu2gFVMRFHOpUkx1c5T9Yhbabnorg5aZ5=w1014-h1578-s-no?authuser=0"
-                      alt=""
-                      className="object-cover w-full rounded aspect-square"
-                    />
+                    <img src={PotHang} alt="" className="object-cover w-full rounded aspect-square" />
 
                     <div className="mt-3">
                       <h3 className="font-medium text-gray-900 group-hover:underline group-hover:underline-offset-4">Plant Pot Hangers</h3>
@@ -54,11 +54,7 @@ export default function FeaturedProducts() {
                 </li>
                 <li>
                   <a href="#" className="block group">
-                    <img
-                      src="https://lh3.googleusercontent.com/rrgkJXgQpy5ZAjtcld9Nefmr-cnkPTOERGGYWLYLPhL61C_jhXY8RWpylX9doccQmR8hWk7UC0YgYBmT0xUZT7v3zrX-Z7_zrm4PTU4_JZXL64Sz9c7JuUMIkl_SLvk3tDFLwYB1R34uOCjSCyFtnEkGWzMUkpAfR1d179ygwO5JP2TGDCdiCJJ4QFy1e94pFhQ3dMJnzwYApc3t9bD3puaz4963oDBXN4gdO_7zG7HtfTQVMAUMwcc2NHewgJCsbBHXyNVdHKYXQ6CH3Vn2a1VsSjmq97CfaSz5Wt68xfm5eydIHoGPkhbhPt4W75weBtucNQGNomRDovWzl3D8CdLE-lrqXhOvA-5Qb-uuNanTTXfYOdYACGfCPPkJPEPq_Xjk7BI9ftCX9u0g4Lr1z2oqIoe7pEj0y1I8DeALt6jlTpeeG7Fy65NTrGyyE0pw3ExWrD4hBMKthegOwxBKZmB9iCxe9iCWSMk34dROjHuh-4rG110WL81kyAHtwxXC5-W5Q0Q89eXiJXvfnvpzrinPScjXXetCqi41LpGV5dlCW8-99z5jg1zxvv8BaH_oW1jBoejvbowykmyxNuqvqu5NnRXU5GZiL3Ld3UgjkU_cYiqpNUqjl94QE2Nlw9IScSSwUY92gilp10aWUqwfeYUq9sAv_pBkjGRGmFJU8EgVApv_wBA3Qk8kX-JJsTsDj-Y32E6qdhdm1l_PnuzV8zSGkqmou2YLyiFp1Et0GbyZe8VGs3fF6XjDQKyvWUnDwiuqewwOEmzyXgF0H2s4nAssb9D9r5alxXeBRllYFtJo39dy6au53ioG4p8tGPnI8yvYy70etOCSjzKrbPFqcENQ1nM3KtI0AGOdFL-0cXI_8eY020pgVcBNCxNWPp81C5LetiUu2YBKrEI3Q2BCQKmo433lBZjPW7P9OCzGcGRl=w1080-h1371-s-no?authuser=0"
-                      alt=""
-                      className="object-cover w-full rounded aspect-square"
-                    />
+                    <img src={Belt} alt="" className="object-cover w-full rounded aspect-square" />
 
                     <div className="mt-3">
                       <h3 className="font-medium text-gray-900 group-hover:underline group-hover:underline-offset-4">Macrame Belts</h3>
@@ -69,11 +65,7 @@ export default function FeaturedProducts() {
                 </li>
                 <li>
                   <a href="#" className="block group">
-                    <img
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMYJqoXBqHhxgPZXx8ENeyadOjSPPqmoG9TQ&usqp=CAU"
-                      alt=""
-                      className="object-cover w-full rounded aspect-square"
-                    />
+                    <img src={WallHang} alt="" className="object-cover w-full rounded aspect-square" />
 
                     <div className="mt-3">
                       <h3 className="font-medium text-gray-900 group-hover:underline group-hover:underline-offset-4">Macrame Wall Hangers</h3>
