@@ -74,12 +74,6 @@ export default function Footer() {
                       </li>
 
                       <li>
-                        <Link to="/Ruth" className="text-gray-700 transition hover:opacity-75">
-                          Meet the Founder
-                        </Link>
-                      </li>
-
-                      <li>
                         <Link to="/" className="text-gray-700 transition hover:opacity-75">
                           Product Customisation Guidelines
                         </Link>

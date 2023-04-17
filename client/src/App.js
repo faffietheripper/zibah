@@ -2,7 +2,6 @@ import Home from "./Pages/Home/Home";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Founder from "./Pages/Founder/Founder"
 import "./App.css";
 import Shop from "./Pages/Shop/Shop";
 import AdminLogin from "./Pages/AdminAu/AdminLogin";
@@ -10,7 +9,6 @@ import AdminHome from "./Admin/AdminHome";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { CartProvider } from "react-use-cart";
-
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -32,10 +30,9 @@ function App() {
     <BrowserRouter>
       <CartProvider>
         <Header />
-        
+
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Ruth" element={<Founder />} />
           <Route path="/shop" element={<Shop products={products} />} />
           <Route path="/admin1" element={<AdminLogin />} />
           <Route path="/adminhome" element={<AdminHome products={products} getProducts={getProducts} />} />

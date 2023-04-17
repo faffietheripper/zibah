@@ -1,45 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import ZibahLogo from "../../Images/logo.jpg";
 
 export default function Hamburger() {
-  const [open, setOpen] = useState(false);
-
   return (
     <div class="fixed w-full top-0 left-0 text-black z-100">
-      <div class="md:flex items-center justify-between  bg-white md:py-4 py-8 md:px-10 px-7">
+      <div class="flex items-center justify-between  bg-white py-4 px-7">
         <div class="cursor-pointer">
           <Link to="/">
             <img src={ZibahLogo} alt="logo" class="h-[30px] ml-8" />
           </Link>
         </div>
-        <div class="text-3xl absolute right-8 text-black top-6 cursor-pointer md:hidden" onClick={() => setOpen(!open)}>
-          <ion-icon name={open ? "close" : "menu"}></ion-icon>
-        </div>
-        <div>
-          <ul
-            className={`md:flex md:items-center gap-6 text-sm md:my-0  md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
-              open ? "top-20" : "top-[-490px]"
-            }`}
-          >
-            <li class="my-16 md:my-2" onClick={() => setOpen(!open)}>
-              <Link className="text-gray-500 transition hover:text-gray-800/75" to="/">
-                Home
-              </Link>
-            </li>
 
-            <li class="my-16 md:my-2" onClick={() => setOpen(!open)}>
-              <Link className="text-gray-500 transition hover:text-gray-800/75" to="/shop">
-                Shop
-              </Link>
-            </li>
-            <li class="my-16 md:my-2" onClick={() => setOpen(!open)}>
-              <Link className="text-gray-500 transition hover:text-gray-800/75" to="/Ruth">
-                Ruth
-              </Link>
-            </li>
-          </ul>
+        <div>
+          <Link className="text-gray-500 transition hover:text-gray-800/75" to="/shop">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="teal" className="w-6 h-6">
+              <path d="M5.223 2.25c-.497 0-.974.198-1.325.55l-1.3 1.298A3.75 3.75 0 007.5 9.75c.627.47 1.406.75 2.25.75.844 0 1.624-.28 2.25-.75.626.47 1.406.75 2.25.75.844 0 1.623-.28 2.25-.75a3.75 3.75 0 004.902-5.652l-1.3-1.299a1.875 1.875 0 00-1.325-.549H5.223z" />
+              <path
+                fillRule="evenodd"
+                d="M3 20.25v-8.755c1.42.674 3.08.673 4.5 0A5.234 5.234 0 009.75 12c.804 0 1.568-.182 2.25-.506a5.234 5.234 0 002.25.506c.804 0 1.567-.182 2.25-.506 1.42.674 3.08.675 4.5.001v8.755h.75a.75.75 0 010 1.5H2.25a.75.75 0 010-1.5H3zm3-6a.75.75 0 01.75-.75h3a.75.75 0 01.75.75v3a.75.75 0 01-.75.75h-3a.75.75 0 01-.75-.75v-3zm8.25-.75a.75.75 0 00-.75.75v5.25c0 .414.336.75.75.75h3a.75.75 0 00.75-.75v-5.25a.75.75 0 00-.75-.75h-3z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </Link>
         </div>
       </div>
     </div>
