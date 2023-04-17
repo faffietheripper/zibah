@@ -44,10 +44,10 @@ export default function CustomForm() {
             <div className=" flex fixed md:ml-20 overflow-y-auto inset-0 z-50 outline-none focus:outline-none ml-4">
               <div className="relative w-auto max-w-3xl">
                 {/*content*/}
-                <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-[90vw] bg-white outline-none focus:outline-none">
+                <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-[90vw] bg-[url('https://cdn.pixabay.com/photo/2023/01/07/08/41/leaves-7702829__480.jpg')] bg-cover bg-center bg-no-repeat outline-none focus:outline-none">
                   {/*header*/}
                   <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
-                    <h3 className="text-3xl font-semibold">Product Customisation Form</h3>
+                    <h3 className="text-3xl text-white font-semibold">Product Customisation Form</h3>
                     <button
                       className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                       onClick={() => setShowModal(false)}
@@ -59,9 +59,9 @@ export default function CustomForm() {
 
                   <div class="w-full px-4 sm:px-6 sm:py-16 lg:px-8">
                     <div class="mx-auto max-w-lg text-center">
-                      <h1 class="text-2xl font-bold sm:text-3xl">Order yours today</h1>
+                      <h1 class="text-2xl text-white font-bold sm:text-3xl">Order yours today</h1>
 
-                      <p class="my-4 text-gray-500">
+                      <p class="my-4 text-gray-200">
                         Please enter your personal details and what product you would like to purchase from the shop. Ruth will be in touch with you as soon as possible.
                       </p>
                     </div>
@@ -105,7 +105,7 @@ export default function CustomForm() {
                         />
                       </div>
                       <div>
-                        <button type="submit" value="Send" class="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto">
+                        <button type="submit" value="Send" class="inline-block w-full rounded-lg bg-orange-600 px-5 py-3 font-medium text-white sm:w-auto">
                           {" "}
                           Request Quote{" "}
                         </button>

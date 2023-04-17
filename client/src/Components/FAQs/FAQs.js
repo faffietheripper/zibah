@@ -2,7 +2,7 @@ import React from "react";
 
 export default function FAQs() {
   return (
-    <div className="my-8">
+    <div className="lg:my-8 my-4 mb-28 lg:mb-32">
       <div className="space-y-4 mx-8">
         <h2 className="text-2xl font-bold text-gray-900 md:text-3xl text-center">Frequently Asked Questions</h2>
 

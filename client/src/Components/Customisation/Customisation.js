@@ -6,7 +6,7 @@ export default function Customisation() {
   return (
     <>
       <div id="custom">
-        <section class="mb-32">
+        <section class="lg:mb-36">
           <div className="lg:mx-28 mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:h-[60vh] lg:grid-cols-2 ">
               <div className=" z-10 lg:py-16 ">

@@ -68,37 +68,44 @@ export default function AdminHome({ getProducts }) {
     return <AdminLogin />;
   }
   return (
-    <section className="text-center">
-      <input onChange={handleName} value={name} placeholder="Search for Product" className="text-center border border-solid rounded" />
+    <>
+      <div className="mt-36">
+        <section className="text-center">
+          <input onChange={handleName} value={name} placeholder="Search for Product" className="text-center border border-solid rounded" />
 
-      <div className="flex flex-wrap place-content-around m-8">
-        {products.map((product, index) => {
-          return (
-            <div key={index}>
-              <div className="my-6">
-                <p> Name: {product.name}</p>
-                <p> Price: {product.price}</p>
-                <img className="h-[250px] w-[300px] rounded" src={product.img} />
+          <div className="mt-8 grid grid-cols-2  md:grid-cols-3 lg:grid-cols-4">
+            {products.map((product, index) => {
+              return (
+                <div key={index}>
+                  <div className="my-6">
+                    <p> Name: {product.name}</p>
+                    <p> Price: {product.price}</p>
+                    <img className="h-[250px] w-[300px] rounded" src={product.img} />
 
-                <span className="border border-solid border-black rounded m-2 bg-orange-500" onClick={() => deleteProduct(product._id, product.name)}>
-                  {" "}
-                  Remove{" "}
-                </span>
-              </div>
-            </div>
-          );
-        })}
+                    <span
+                      className="border border-solid border-black rounded m-2 bg-orange-500"
+                      onClick={() => deleteProduct(product._id, product.name)}
+                    >
+                      {" "}
+                      Remove{" "}
+                    </span>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+          <section className="bg-teal-700 m-6 flex flex-col">
+            <h2 className="text-center"> Add a Product</h2>
+            <form onSubmit={handleAddProduct} className="text-center ">
+              <input name="name" value={form.name} onChange={handleChange} placeholder="Name" />
+              <input name="description" value={form.description} onChange={handleChange} placeholder="Description" />
+              <input name="img" value={form.img} onChange={handleChange} placeholder="Image" />
+              <input name="price" value={form.price} onChange={handleChange} placeholder="Price" />
+              <button type="submit"> Add Product</button>
+            </form>
+          </section>
+        </section>
       </div>
-      <section className="bg-teal-700 m-6 flex flex-col">
-        <h2 className="text-center"> Add a Product</h2>
-        <form onSubmit={handleAddProduct} className="text-center ">
-          <input name="name" value={form.name} onChange={handleChange} placeholder="Name" />
-          <input name="description" value={form.description} onChange={handleChange} placeholder="Description" />
-          <input name="img" value={form.img} onChange={handleChange} placeholder="Image" />
-          <input name="price" value={form.price} onChange={handleChange} placeholder="Price" />
-          <button type="submit"> Add Product</button>
-        </form>
-      </section>
-    </section>
+    </>
   );
 }

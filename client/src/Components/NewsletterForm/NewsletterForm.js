@@ -22,11 +22,11 @@ export default function ContactUs() {
 
   return (
     <div>
-      <section>
-        <div className="p-8 md:p-12 lg:px-16 lg:py-24">
+      <section className="lg:mb-32">
+        <div className="p-8 md:p-12 lg:px-16 lg:py-24 bg-[url('https://cdn.pixabay.com/photo/2023/01/07/08/41/leaves-7702829__480.jpg')] bg-cover bg-center bg-no-repeat">
           <div className="mx-auto max-w-lg text-center">
-            <h2 className="text-2xl font-bold text-gray-900 md:text-3xl"> Sign Up and dont miss our sales</h2>
-            <p className=" text-gray-200 sm:mt-4 sm:block">
+            <h2 className="text-2xl lg:mb-0 mb-8 font-bold text-gray-900 md:text-3xl"> Sign Up and dont miss our sales</h2>
+            <p className=" text-xs text-gray-200 sm:mt-4 sm:block">
               {" "}
               Send me the Zibah Creations newsletter. I expressly agree to receive the newsletter and know that I can easily unsubscribe at any time.
             </p>
