@@ -1,5 +1,5 @@
 import React from "react";
-import HomeHero from "../../Components/HomeHero/HomeHero";
+import HomeHero from "../../Components/HomeHero/HomeHero"
 import NewsletterForm from "../../Components/NewsletterForm/NewsletterForm";
 import FeaturedProducts from "../../Components/FeaturedProducts/FeaturedProducts";
 import Customisation from "../../Components/Customisation/Customisation";
@@ -12,9 +12,9 @@ export default function Home() {
       <HomeHero />
       <FeaturedProducts />
       <Customisation />
-      <AboutFounder />
       <FAQs />
       <NewsletterForm />
+      <AboutFounder />
     </div>
   );
 }

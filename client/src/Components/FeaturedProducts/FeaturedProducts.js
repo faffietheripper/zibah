@@ -12,10 +12,10 @@ export default function FeaturedProducts() {
       <section>
         <div className="max-w-screen-xl px-4 py-8 mx-auto sm:py-12 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:items-stretch">
-            <div className="grid p-6 rounded place-content-center sm:p-8 ">
-              <div className="max-w-md mx-auto text-center lg:text-left">
+            <div className="grid p-6 rounded place-content-center sm:p-8 bg-[url('https://cdn.pixabay.com/photo/2023/01/07/08/41/leaves-7702829__480.jpg')] bg-cover bg-center bg-no-repeat">
+              <div className="max-w-md mx-auto text-center lg:text-left ">
                 <header>
-                  <h2 className="text-9xl font-bold text-gray-900 sm:text-3xl">Featured Macrame Products.</h2>
+                  <h2 className="text-xl font-bold text-white sm:text-3xl">Featured Macrame Products.</h2>
                 </header>
 
                 <Link

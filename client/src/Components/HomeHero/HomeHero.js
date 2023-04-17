@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function HomeHero() {
   return (
     <div className="">
-      <section className="bg-[url('../public/hero.webp')] bg-cover bg-fixed bg-center bg-no-repeat">
+      <section className="bg-cover bg-[url('https://cdn.shopify.com/s/files/1/0579/7583/2716/collections/Homepage_Purses_Landscape_EDITED_1200x1200.jpg?v=1666028094')] bg-fixed bg-center bg-no-repeat">
         <div className="inset-0 bg-white/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-white/95 sm:to-white/25"></div>
 
         <div className=" mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">

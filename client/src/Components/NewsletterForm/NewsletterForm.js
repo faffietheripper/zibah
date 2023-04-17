@@ -22,11 +22,11 @@ export default function ContactUs() {
 
   return (
     <div>
-      <section className="bg-gray-50">
+      <section>
         <div className="p-8 md:p-12 lg:px-16 lg:py-24">
           <div className="mx-auto max-w-lg text-center">
             <h2 className="text-2xl font-bold text-gray-900 md:text-3xl"> Sign Up and dont miss our sales</h2>
-            <p className=" text-gray-500 sm:mt-4 sm:block">
+            <p className=" text-gray-200 sm:mt-4 sm:block">
               {" "}
               Send me the Zibah Creations newsletter. I expressly agree to receive the newsletter and know that I can easily unsubscribe at any time.
             </p>

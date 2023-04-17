@@ -8,13 +8,13 @@ export default function Shop({ products }) {
   const { addItem } = useCart();
 
   return (
-    <div class="mt-20">
-      <h2 className="text-2xl font-bold text-gray-900 md:text-6xl text-center py-12">Browse through our Catalogue</h2>
-      <ShowMore maxHeight={"100vh"} >
-        <section className="mt-8 grid grid-cols-2   md:grid-cols-3 lg:grid-cols-4 ">
+    <div class="mt-20 ">
+      <h2 className="text-2xl font-bold text-gray-900 bg-white md:text-6xl text-center py-12">Browse through our Catalogue</h2>
+      <ShowMore maxHeight={"100vh"}>
+        <section className="mt-8 grid grid-cols-2   md:grid-cols-3 lg:grid-cols-4">
           {products.map((product) => {
             console.log(product);
-            function handleClick() { 
+            function handleClick() {
               addItem({ ...product, id: product._id });
               alert("The selected product has been added to cart");
             }
@@ -35,9 +35,7 @@ export default function Shop({ products }) {
             );
           })}
         </section>
-
-
-      </ShowMore >
+      </ShowMore>
       <CustomForm />
       <Testimonials />
     </div>

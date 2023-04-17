@@ -4,7 +4,7 @@ import ZibahLogo from "../../Images/logo.jpg";
 
 export default function Hamburger() {
   return (
-    <div class="fixed w-full top-0 left-0 text-black z-100">
+    <div class="fixed w-full top-0 left-0 text-black z-20">
       <div class="flex items-center justify-between  bg-white py-4 px-7">
         <div class="cursor-pointer">
           <Link to="/">
