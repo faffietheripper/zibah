@@ -162,16 +162,16 @@ export default function Testimonials() {
                   </svg>
                 </div>
 
-                <p class="mt-2 font-medium sm:mt-0">The best thing money can buy!</p>
+                <p class="mt-2 font-medium sm:mt-0">High quality products, Fairly priced </p>
               </header>
 
               <p class="mt-2 text-gray-800">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam possimus fuga dolor rerum dicta, ipsum laboriosam est totam iusto
-                alias incidunt cum tempore aliquid aliquam error quisquam ipsam asperiores! Iste?
+                
+                It was very easy to work with Zibah Creations. They have a wealth of knowledge about their materials and were able to accommodate the design I wanted in a short period of timeI was really pleased with the bag I ordered and Im definitely going to buy more in the future! The quality of the bag is what I expected! Attention to my wishes at the highest level.
               </p>
 
               <footer class="mt-4">
-                <p class="text-xs text-gray-500">John Doe - 12th January, 2024</p>
+                <p class="text-xs text-gray-500">Tafadzwa Mpofu, United Kingdom</p>
               </footer>
             </blockquote>
           </div>

@@ -8,7 +8,7 @@ export default function ContactUs() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm("service_hz4se9h", "template_knwa0el", form.current, "qNsMWr4j71vACFSXb").then(
+    emailjs.sendForm("service_h9h0uu1", "template_foj9qcf", form.current, "NOVNw_xITwBrWUHfm").then(
       (result) => {
         console.log(result.text);
         alert("Thank you for signing up, your email as been received and Ruth will be in touch with you soon ");

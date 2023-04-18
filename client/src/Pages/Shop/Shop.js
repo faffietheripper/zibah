@@ -11,7 +11,7 @@ export default function Shop({ products }) {
   return (
     <>
       <ShopHero />
-      <div class="mt-10 ">
+      <div class="mt-10">
         <h2 className="text-2xl font-bold text-teal-900 md:text-6xl text-center py-12">Browse through our Catalogue</h2>
         <ShowMore maxHeight={"100vh"}>
           <section className="mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">

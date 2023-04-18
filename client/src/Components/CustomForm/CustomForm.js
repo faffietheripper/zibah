@@ -9,10 +9,10 @@ export default function CustomForm() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm("service_vnzcvkd", "template_99l7t23", form.current, "Kd-Wy1G6wt9g8lOxT").then(
+    emailjs.sendForm("service_h9h0uu1", "template_yaktnfx", form.current, "NOVNw_xITwBrWUHfm").then(
       (result) => {
         console.log(result.text);
-        alert("Hey thank you for reaching out. Your message has been sent and Tino will be in touch with you soon.");
+        alert("Hey there, thank you for placing an order. Your message has been received and Ruth will be in touch with you soon.");
       },
       (error) => {
         console.log(error.text);
@@ -62,7 +62,8 @@ export default function CustomForm() {
                       <h1 class="text-2xl text-white font-bold sm:text-3xl">Order yours today</h1>
 
                       <p class="my-4 text-gray-200">
-                        Please enter your personal details and what product you would like to purchase from the shop. Ruth will be in touch with you as soon as possible.
+                        Please enter your personal details and what product you would like to purchase from the shop. Ruth will be in touch with you
+                        as soon as possible.
                       </p>
                     </div>
 
@@ -105,7 +106,11 @@ export default function CustomForm() {
                         />
                       </div>
                       <div>
-                        <button type="submit" value="Send" class="inline-block w-full rounded-lg bg-orange-600 px-5 py-3 font-medium text-white sm:w-auto">
+                        <button
+                          type="submit"
+                          value="Send"
+                          class="inline-block w-full rounded-lg bg-orange-600 px-5 py-3 font-medium text-white sm:w-auto"
+                        >
                           {" "}
                           Request Quote{" "}
                         </button>

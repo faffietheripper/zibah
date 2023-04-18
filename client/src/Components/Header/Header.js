@@ -7,13 +7,13 @@ export default function Hamburger() {
     <div class="fixed w-full top-0 left-0 text-black z-20">
       <div class="flex items-center justify-between  bg-white py-4 px-7">
         <div class="cursor-pointer">
-          <Link to="/">
+          <Link to="/#hero">
             <img src={ZibahLogo} alt="logo" class="h-[30px] ml-8" />
           </Link>
         </div>
 
         <div>
-          <Link to="/shop" className="text-gray-500 transition hover:text-gray-800/75" >
+          <Link to="/shop#catalogue" className="text-gray-500 transition hover:text-gray-800/75">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="teal" className="w-6 h-6">
               <path d="M5.223 2.25c-.497 0-.974.198-1.325.55l-1.3 1.298A3.75 3.75 0 007.5 9.75c.627.47 1.406.75 2.25.75.844 0 1.624-.28 2.25-.75.626.47 1.406.75 2.25.75.844 0 1.623-.28 2.25-.75a3.75 3.75 0 004.902-5.652l-1.3-1.299a1.875 1.875 0 00-1.325-.549H5.223z" />
               <path
