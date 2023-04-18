@@ -24,15 +24,15 @@ export default function CustomForm() {
   return (
     <div class="text-center py-16">
       <div>
-        <h2 class="text-3xl font-extrabold text-gray-900 sm:text-5xl">Customise Your Product</h2>
+        <h2 class="text-3xl font-extrabold text-teal-900 sm:text-5xl">Customise Your Product</h2>
 
-        <p class="max-w-sm mx-auto mt-4 text-gray-200">
+        <p class="max-w-sm mx-auto mt-4 text-gray-700">
           Are you looking for a Zibah Creations handbag that is more individual to you? We can help by creating specific colour and design
           combinations...
         </p>
 
         <a
-          class="inline-block px-12 py-3 mt-8 text-sm font-medium text-white border border-teal-600 rounded-full hover:bg-teal-600 hover:text-white focus:outline-none focus:ring active:bg-teal-500"
+          class="inline-block px-12 py-3 mt-8 text-sm font-medium text-gray-700 border border-teal-600 rounded-full hover:bg-teal-600 hover:text-white focus:outline-none focus:ring active:bg-teal-500"
           onClick={() => setShowModal(true)}
         >
           Get started

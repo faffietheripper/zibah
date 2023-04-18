@@ -11,13 +11,13 @@ export default function HomeHero() {
           <div className="max-w-xl text-center sm:text-left">
             <h2 className="text-3xl font-extrabold text-white lg:mb-0 mb-32 sm:text-5xl">
               Handcrafted. Wholehearted.</h2>
-              <h1><strong className="block font-extrabold text-7xl text-teal-700">Zibah Creations.</strong></h1>
+              <h1><strong className="block font-extrabold text-7xl text-teal-900">Zibah Creations.</strong></h1>
             
 
             <div className="mt-8 flex flex-wrap gap-4 text-center">
               <Link
                 to="/shop"
-                className="block w-full rounded bg-teal-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-teal-700 focus:outline-none focus:ring active:bg-teal-500 sm:w-auto"
+                className="block w-full rounded bg-teal-800 px-12 py-3 text-sm font-medium text-white shadow hover:bg-teal-900 focus:outline-none focus:ring active:bg-teal-700 sm:w-auto"
               >
                 Shop Now
               </Link>

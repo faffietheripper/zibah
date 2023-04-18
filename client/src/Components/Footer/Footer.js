@@ -19,14 +19,14 @@ export default function Footer() {
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
               <div>
                 <p>
-                  <span className="text-xs tracking-wide text-gray-200 uppercase">Whatsapp Us</span>
+                  <span className="text-xs tracking-wide text-gray-700 uppercase">Whatsapp Us</span>
 
                   <a href="#" className="block text-2xl font-medium text-gray-900 hover:opacity-75 sm:text-3xl">
                     +263 77 780 2867
                   </a>
                 </p>
 
-                <ul className="mt-8 space-y-1 text-sm text-gray-200">
+                <ul className="mt-8 space-y-1 text-sm text-gray-700">
                   <li>Monday to Friday: 10am - 5pm</li>
                   <li>Weekend: 10am - 3pm</li>
                 </ul>
@@ -37,7 +37,7 @@ export default function Footer() {
                       to="https://www.facebook.com/profile.php?id=100069111076138"
                       rel="noreferrer"
                       target="_blank"
-                      className="text-gray-200 transition hover:opacity-75"
+                      className="text-gray-700 transition hover:opacity-75"
                     >
                       <span className="sr-only">Facebook</span>
 
@@ -60,13 +60,13 @@ export default function Footer() {
                   <nav aria-label="Footer Navigation - Company" className="mt-6">
                     <ul className="space-y-4 text-sm">
                       <li>
-                        <Link to="/shop" className="text-gray-200 transition hover:opacity-75">
+                        <Link to="/shop" className="text-gray-700 transition hover:opacity-75">
                           Catalogue
                         </Link>
                       </li>
 
                       <li>
-                        <Link to="/" className="text-gray-200 transition hover:opacity-75">
+                        <Link to="/" className="text-gray-700 transition hover:opacity-75">
                           Product Customisation Guidelines
                         </Link>
                       </li>
@@ -78,7 +78,7 @@ export default function Footer() {
 
             <div className="pt-12 mt-12 border-t border-gray-100">
               <div className="sm:flex sm:items-center sm:justify-between">
-                <p className="mt-8 text-xs text-gray-200 sm:mt-0">&copy; 2022. Zibah Creations designed by Tino👑.</p>
+                <p className="mt-8 text-xs text-gray-700 sm:mt-0">&copy; 2022. Zibah Creations designed by Tino👑.</p>
               </div>
             </div>
           </div>

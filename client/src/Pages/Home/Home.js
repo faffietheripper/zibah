@@ -8,7 +8,7 @@ import NewsletterForm from "../../Components/NewsletterForm/NewsletterForm";
 
 export default function Home() {
   return (
-    <div>
+    <div >
       <HomeHero />
       <FeaturedProducts />
       <Customisation />

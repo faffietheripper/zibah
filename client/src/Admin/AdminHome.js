@@ -80,7 +80,7 @@ export default function AdminHome({ getProducts }) {
                   <div className="my-6">
                     <p> Name: {product.name}</p>
                     <p> Price: {product.price}</p>
-                    <img className="h-[250px] w-[300px] rounded" src={product.img} />
+                    <img className="h-[250px] w-[300px] rounded object-contain " src={product.img} />
 
                     <span
                       className="border border-solid border-black rounded m-2 bg-orange-500"
