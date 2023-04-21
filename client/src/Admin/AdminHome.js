@@ -7,6 +7,11 @@ import LogoutButton from "../Components/LogoutButton/LogoutButton";
 export default function AdminHome({ getProducts }) {
   const { isAuthenticated } = useAuth0();
 
+  const user = process.env.User;
+  if (user !== process.env.User) {
+    return !isAuthenticated;
+  }
+
   const [products, setProducts] = useState([]);
   const [name, setName] = useState("");
   const [form, setForm] = useState({
