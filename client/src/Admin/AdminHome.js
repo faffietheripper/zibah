@@ -5,7 +5,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import LogoutButton from "../Components/LogoutButton/LogoutButton";
 
 export default function AdminHome({ getProducts }) {
-  const { user, isAuthenticated } = useAuth0();
+  const { isAuthenticated } = useAuth0();
 
   const [products, setProducts] = useState([]);
   const [name, setName] = useState("");
@@ -66,7 +66,8 @@ export default function AdminHome({ getProducts }) {
     });
   }
 
-  if (user !== process.env.User) {
+  const admin = process.env.User
+  if (admin !== process.env.User) {
     return !isAuthenticated;
   }
 
