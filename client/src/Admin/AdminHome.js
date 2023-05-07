@@ -34,7 +34,7 @@ export default function AdminHome({ getProducts }) {
     if (name !== "") {
       setName(event.target.value);
     } else {
-      event.target.reset();
+      event.target.reset;
     }
   }
 
