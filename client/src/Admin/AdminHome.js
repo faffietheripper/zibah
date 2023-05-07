@@ -31,7 +31,11 @@ export default function AdminHome({ getProducts }) {
   }
 
   function handleName(event) {
-    setName(event.target.value);
+    if (name == "") {
+      event.target.reset();
+    } else {
+      setName(event.target.value);
+    }
   }
 
   function handleChange(event) {
@@ -64,11 +68,6 @@ export default function AdminHome({ getProducts }) {
       price: "",
       img: "",
     });
-  }
-
-  const admin = process.env.User
-  if (admin !== process.env.User) {
-    return !isAuthenticated;
   }
 
   return (
