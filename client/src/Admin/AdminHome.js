@@ -32,9 +32,9 @@ export default function AdminHome({ getProducts }) {
 
   function handleName(event) {
     if (name == "") {
-      event.target.reset();
-    } else {
       setName(event.target.value);
+    } else {
+      event.target.reset();
     }
   }
 
