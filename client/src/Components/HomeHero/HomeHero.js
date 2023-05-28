@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { a } from "react-router-dom";
 
 export default function HomeHero() {
   return (
@@ -15,12 +15,12 @@ export default function HomeHero() {
             
 
             <div className="mt-8 flex flex-wrap gap-4 text-center">
-              <Link
-                to="/shop"
+              <a
+                href="/shop"
                 className="block w-full rounded bg-teal-800 px-12 py-3 text-sm font-medium text-white shadow hover:bg-teal-900 focus:outline-none focus:ring active:bg-teal-700 sm:w-auto"
               >
                 Shop Now
-              </Link>
+              </a>
             </div>
           </div>
         </div>

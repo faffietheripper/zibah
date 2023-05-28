@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { a } from "react-router-dom";
 import Custom from "../../Images/CustomGuide.jpeg";
 
 export default function Customisation() {
@@ -28,12 +28,12 @@ export default function Customisation() {
                     you are completely comfortable with the finished cost before processing your order.
                   </p>
 
-                  <Link
-                    to="/shop"
+                  <a
+                    href="/shop"
                     className="mt-8 inline-block rounded border border-teal-600 bg-teal-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-teal-600 focus:outline-none focus:ring active:text-teal-500"
                   >
                     Order a Custom
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>

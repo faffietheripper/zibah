@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { a } from "react-router-dom";
 import TradeMark from "../../Images/Footer.jpeg"
 
 export default function Footer() {
@@ -33,8 +33,8 @@ export default function Footer() {
 
                 <ul className="flex gap-6 mt-8">
                   <li>
-                    <Link
-                      to="https://www.facebook.com/profile.php?id=100069111076138"
+                    <a
+                      href="https://www.facebook.com/profile.php?id=100069111076138"
                       rel="noreferrer"
                       target="_blank"
                       className="text-gray-700 transition hover:opacity-75"
@@ -48,7 +48,7 @@ export default function Footer() {
                           clipRule="evenodd"
                         />
                       </svg>
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -60,15 +60,15 @@ export default function Footer() {
                   <nav aria-label="Footer Navigation - Company" className="mt-6">
                     <ul className="space-y-4 text-sm">
                       <li>
-                        <Link to="/shop" className="text-gray-700 transition hover:opacity-75">
+                        <a href="/shop" className="text-gray-700 transition hover:opacity-75">
                           Catalogue
-                        </Link>
+                        </a>
                       </li>
 
                       <li>
-                        <Link to="/" className="text-gray-700 transition hover:opacity-75">
+                        <a href="/" className="text-gray-700 transition hover:opacity-75">
                           Product Customisation Guidelines
-                        </Link>
+                        </a>
                       </li>
                     </ul>
                   </nav>

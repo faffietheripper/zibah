@@ -6,7 +6,7 @@ export default function FAQs() {
       <div className="space-y-4 mx-8">
         <h2 className="text-2xl font-bold text-teal-900 md:text-3xl text-center">Frequently Asked Questions</h2>
 
-        <details className="group [&_summary::-webkit-details-marker]:hidden" open>
+        <details className="group [&_summary::-webkit-details-marker]:hidden">
           <summary className="flex items-center justify-between p-4 rounded-lg cursor-pointer bg-teal-900">
             <h2 className="font-medium text-gray-900">What is the shipping policy? </h2>
 
@@ -48,7 +48,7 @@ export default function FAQs() {
           </p>
         </details>
 
-        <details className="group [&_summary::-webkit-details-marker]:hidden" open>
+        <details className="group [&_summary::-webkit-details-marker]:hidden">
           <summary className="flex items-center justify-between p-4 rounded-lg cursor-pointer bg-teal-900">
             <h2 className="font-medium text-gray-900">How long does it take to deliver a product?</h2>
 

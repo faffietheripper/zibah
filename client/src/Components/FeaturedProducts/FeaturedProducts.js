@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { a } from "react-router-dom";
 import FeaturedPic from "../../Images/FeaturedProd.jpeg";
 import PotHang from "../../Images/Plant Pot Hanger.jpeg";
 import CushCover from "../../Images/CushionCover.jpeg";
@@ -18,12 +18,12 @@ export default function FeaturedProducts() {
                   <h2 className="text-xl font-bold text-white sm:text-3xl">Featured Macrame Products.</h2>
                 </header>
 
-                <Link
-                  to="/shop"
+                <a
+                  href="/shop"
                   className="inline-block px-12 py-3 mt-8 text-sm font-medium text-white transition bg-teal-700 border border-teal-700 rounded hover:shadow focus:outline-none focus:ring"
                 >
                   Shop All
-                </Link>
+                </a>
               </div>
             </div>
 
